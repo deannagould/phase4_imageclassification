@@ -49,8 +49,6 @@ Below is a histogram of a Pneumonia X-Ray. It's clear that the pneumonia X-Ray h
 
 The best performing model was my last model which was the Inception V3. The binary accuracy for the final epoch was 0.9937, while the binary accuracy for the validation set was 0.9656. Although I would've liked to have a closer binary accuracy score for the train and validation set, the model is still performing well on both sets.  
 
-The final model had a true positive rate of 98.3%, and a false negative rate of 1.7%. Even though this isn't perfect, it is still suitable for a doctor to use as an aid or added tool, or to flag an initial diagnosis. 
-
 ![final_conf](images/conf_final_percent.png)  
 
 This is the final model architecture that was used to generate the conclusions below.
@@ -59,7 +57,9 @@ This is the final model architecture that was used to generate the conclusions b
 
 ### Conclusions and Recommendations
 
-Based on the results from the final Inception V3 model, it would be my recommendation to use Inception V3 for modeling. In the future if there were more time for this deliverable, I would tweak different parameters or potentially try another result where I return a 99.9% true positive rate. Even with 99.9%, if this were applied to a country's population, it could still result in thousands of false negatives. This is why even though the percentage may be small, when it comes to healthcare cases, the percentages are more than numbers.  
+Based on the results from the final Inception V3 model, it would be my recommendation to use Inception V3 for modeling. The Inception V3 model had a true positive rate of 99.2%, and a false negative rate of 0.8% when it was run on the test set. Even though this isn't perfect, especially because the false positive rate is so high, it is still suitable for a doctor to use as an aid or added tool, or to flag an initial diagnosis.  
+
+In the future if there were more time for this deliverable, I would tweak different parameters to keep similar true positive rates, while lowering the false positives. Even with 99.9%, if this were applied to a country's population, it could still result in thousands of false negatives. This is why even though the percentage may be small, when it comes to healthcare cases, the percentages are more than numbers.  
 
 In order to generate more information from this model, I would ask to see patient data in addition to the X-Ray images. Based on some of the X-Ray images, it does appear that some patient's look smaller. It is important to train the model on patient's of all ages, sexes, sizes, ethnicities, or even their smoking background. 
 
